@@ -1,0 +1,16 @@
+dma0 is for in_part and out_map. It has a read and write channel.
+dma1 is for in_data only. It only has a read channel.
+
+hp0 and hp1 are from 0x00000000 to 0x1FFFFFFF. hp0 has mm2s and s2mm, hp1 only has mm2s
+
+axi_dma_0 s_axi_lite reg 0x4040_0000 to 0x4040_FFFF
+axi_dma_1 s_axi_lite reg 0x4041_0000 to 0x4041_FFFF
+
+Needed for sending length data:
+hw_fcl_0  s_axi_ctrl reg 0x43C0_0000 to 0x43C0_FFFF
+
+Address info for hw_fcl_CTRL_s_axi:
+0x10 to 0x14: in_len
+0x18 to 0x1c: out_len
+
+out_len is both for in_part and out_map

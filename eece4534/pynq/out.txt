@@ -1,0 +1,32 @@
+Generating fcl_accel overlay...
+Done.
+Testing single-weight
+Running.
+Loading hardware...
+Attempting to mmap() hardware...
+Output:
+0.750000 0.750000 0.750000 0.750000 0.750000 0.750000 0.750000 0.750000 0.750000 0.750000 0.750000 0.750000 0.750000 0.750000 0.750000 0.750000 
+Time taken: 0.0007990000 seconds.
+
+Testing layer 1 of tiny.cfg tiny.weights data/dog.jpg
+Loading inputs...
+Loading weights...
+Running.
+Time taken: 2.6846990585 seconds.
+
+Comparing output to expected output... Done!
+Number of discrepancies: 765824
+Average error: -0.00000018849853233860
+
+Testing layer 1 on software
+Loading data...
+Running.
+Time taken: 5.3218321800 seconds.
+
+Comparing output to expected output... Done!
+Number of discrepancies: 0
+Average error: nan
+Attempting to close /dev/mem
+
+
+Hardware was 1.9822826385 times faster than software.
